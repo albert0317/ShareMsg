@@ -8,7 +8,21 @@ liff.init({
   liff.login();
 
   // 寄送訊息
-  
+  function ShareText(){
+    const msg = document.querySelector(".mytext");
+
+    liff.shareTargetPicker([
+      {
+        type: "text",
+        text: msg
+      }
+    ])
+      .then(
+        alert("ShareTargetPicker was launched")
+      ).catch(function(res) {
+        alert("Failed to launch ShareTargetPicker")
+      })
+}
   
 }).catch(function(error) {
   console.log(error);

@@ -5,10 +5,11 @@ liff.init({
 }).then(function() {
   console.log('LIFF init');
   
-  liff.login({
-    // 使用者登入後要去到哪個頁面
-    redirectUri: 'https://albert0317.github.io/ShareMsg/'
-  });
+  if(!isLoggedIn) {
+    liff.login({
+      redirectUri: 'https://albert0317.github.io/ShareMsg/'
+    });
+  }
 
   // 寄送訊息
   function ShareText(){

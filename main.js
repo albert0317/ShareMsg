@@ -1,4 +1,4 @@
-var liffID = '';
+var liffID = '1656659206-AK0oVV6g';
 
 liff.init({
   liffId: liffID
@@ -8,18 +8,7 @@ liff.init({
   liff.login();
 
   // 寄送訊息
-  liff.sendMessages([
-    {
-      type: 'text',
-      text: '好喔'
-    }
-  ])
-    .then(() => {
-      console.log('message sent');
-    })
-    .catch((err) => {
-      console.log('error', err);
-    });
+  
   
 }).catch(function(error) {
   console.log(error);

@@ -13,6 +13,9 @@ liff.init({
 
   // 寄送訊息
   function ShareText(){
+    
+    alert("測試");
+
     const msg = document.querySelector(".mytext");
 
     liff.shareTargetPicker([

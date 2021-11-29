@@ -9,11 +9,11 @@ function ShareText(){
       type: "text",
       text: t
     }
-  ]).catch(function(res) {
-      alert("傳送失敗")
-  }).then(
+  ]).then(
       liff.closeWindow()
-  )  
+  ).catch(function(res) {
+      alert("傳送失敗")
+  })
 }
 
 liff.init({

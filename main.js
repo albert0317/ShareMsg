@@ -12,8 +12,6 @@ function ShareText(){
 
   ]).catch(function(res) {
       alert("傳送失敗")
-  }).catch(function(){
-      liff.closeWindow()
   })
 }
 

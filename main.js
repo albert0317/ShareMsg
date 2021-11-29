@@ -9,10 +9,7 @@ function ShareText(){
       type: "text",
       text: t
     }
-  ])
-    .then(
-      alert("已成功傳送")
-    ).catch(function(res) {
+  ]).catch(function(res) {
       alert("傳送失敗")
     })
   

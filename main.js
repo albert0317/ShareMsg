@@ -9,7 +9,6 @@ function ShareText(){
       type: "text",
       text: t
     }
-
   ]).catch(function(res) {
       alert("傳送失敗")
   })

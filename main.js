@@ -1,5 +1,23 @@
 var liffID = '1656659206-AK0oVV6g';
 
+// 寄送訊息
+function ShareText(){
+  var t = document.getElementById("mytext").value
+    
+  liff.shareTargetPicker([
+    {
+      type: "text",
+      text: t
+    }
+  ])
+    .then(
+      alert("已成功傳送")
+    ).catch(function(res) {
+      alert("傳送失敗")
+    })
+  
+}
+
 liff.init({
   liffId: liffID
 }).then(function() {
@@ -10,26 +28,6 @@ liff.init({
       redirectUri: 'https://albert0317.github.io/ShareMsg/'
     });
   }
-
-  // 寄送訊息
-  function ShareText(){
-    
-    alert("測試");
-
-    const msg = document.querySelector(".mytext");
-
-    liff.shareTargetPicker([
-      {
-        type: "text",
-        text: msg
-      }
-    ])
-      .then(
-        alert("ShareTargetPicker was launched")
-      ).catch(function(res) {
-        alert("Failed to launch ShareTargetPicker")
-      })
-}
   
 }).catch(function(error) {
   console.log(error);

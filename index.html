@@ -7,13 +7,14 @@
     <title>分享訊息</title>
 </head>
 <body>
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
     <h1>輸入想分享的訊息</h1><br>
-    <textarea name="mytext"
+    <textarea id="mytext"
               rows="10"
               cols="40"
               required></textarea>
-    <button onclick="ShareText()">確定</button>
-    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
-    <script src="main.js"></script>
+    <button type="button" onclick="ShareText()">確定</button>
 </body>
 </html>

@@ -12,7 +12,7 @@ function ShareText(){
 
   ]).catch(function(res) {
       alert("傳送失敗")
-  }).then(function(){
+  }).catch(function(){
       liff.closeWindow()
   })
 }

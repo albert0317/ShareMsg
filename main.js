@@ -6,7 +6,7 @@ function ShareText(){
   liff.shareTargetPicker([
     {
       "type": "flex",
-      "altText": "Flex Message",
+      "altText": "我送禮物來了，打開看看吧！",
       "contents": 
       
       {
